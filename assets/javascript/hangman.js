@@ -48,13 +48,9 @@ document.onkeyup = function (event) {
     }
 };
 
-startButton.onclick = function (event) {
-    setup();
-}
+startButton.addEventListener('touchstart', setup, false);
+startButton.addEventListener('click', setup, false);
 
-startButton.onfocus = function (event) {
-    setup();
-}
 
 
 
