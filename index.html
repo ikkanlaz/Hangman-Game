@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Reenie+Beanie" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <h1>H A N G M A N</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="jumbotron">
+                    <h2 id="any-key">Press any key to get started</h2>
+                    <div id="game-screen" style="display: none;">
+                        <h3>Wins: <span id="wins" >0</span></h3>
+                        <h3>Current Word</h3>
+                        <h3> <span id="word-to-guess"> - </span></h3>
+                        <h3>Number of guesses remaining: <span id="number-of-guesses"></span></h3>
+                        <h3>Letters already guessed: <span id="guessed-letters"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/hangman.js"></script>
+</body>
+
+</html>

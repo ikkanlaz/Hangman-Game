@@ -1,0 +1,27 @@
+body {
+    font-family: 'Reenie Beanie', cursive;
+    color: #555555;;
+    background-image: url(/Users/andrewlazenby/Desktop/code/Hangman-Game/assets/images/linedpaper.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 95px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.jumbotron {
+    background-image: url(/Users/andrewlazenby/Desktop/code/Hangman-Game/assets/images/extra_clean_paper.png);
+}
