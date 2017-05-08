@@ -1,7 +1,7 @@
 body {
     font-family: 'Reenie Beanie', cursive;
     color: #555555;;
-    background-image: url(/Users/andrewlazenby/Desktop/code/Hangman-Game/assets/images/linedpaper.png);
+    background-image: url(https://ikkanlaz.github.io/Hangman-Game/assets/images/linedpaper.png);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,5 +23,5 @@ h3 {
 }
 
 .jumbotron {
-    background-image: url(/Users/andrewlazenby/Desktop/code/Hangman-Game/assets/images/extra_clean_paper.png);
+    background-image: url(https://ikkanlaz.github.io/Hangman-Game/assets/images/extra_clean_paper.png);
 }
