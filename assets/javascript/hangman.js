@@ -16,12 +16,16 @@ function setGameSceen() {
     document.getElementById("game-screen").style = "display: block;";
 }
 
-function getRandomArbitrary(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-
 function startGame() {
     wordToGuess = getWordToGuess();
+}
+
+function getWordToGuess (){
+    
+}
+
+function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 document.onkeyup = function (event) {
