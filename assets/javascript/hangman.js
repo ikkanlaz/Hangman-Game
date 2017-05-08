@@ -48,7 +48,6 @@ document.onkeyup = function (event) {
     }
 };
 
-// startButton.addEventListener('touchstart', setup, false);
 startButton.addEventListener('click', setup, false);
 
 
