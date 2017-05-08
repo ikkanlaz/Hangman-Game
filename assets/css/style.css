@@ -25,3 +25,12 @@ h3 {
 .jumbotron {
     background-image: url(https://ikkanlaz.github.io/Hangman-Game/assets/images/extra_clean_paper.png);
 }
+
+#start-game {
+    background-color: transparent;
+    border: none;
+}
+
+#start-game:focus {
+    outline: none;
+}
