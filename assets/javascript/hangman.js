@@ -1,5 +1,5 @@
 // Let's start by grabbing a reference to the <span> below.
-var startText = document.getElementById("start-game");
+var startButton = document.getElementById("start-game");
 var gameScreen = document.getElementById("game-screen");
 var wins = document.getElementById("wins");
 var wordToGuess = document.getElementById("word-to-guess");
@@ -13,12 +13,17 @@ var wordChoices = ["r", "p", "s"];
 var userInput;
 console.log(wins.style);
 
-function setGameSceen() {
-    startText.style = "display: none;";
-    gameScreen.style = "display: block;";
+function setup() {
+    if (isGameStarted === false) {
+        startButton.style = "display: none;";
+        gameScreen.style = "display: block;";
+        createNewInstanceOfGame();
+        isGameStarted = true;
+    }
+
 }
 
-function startGame() {
+function createNewInstanceOfGame() {
     wordToGuess = getWordToGuess();
 }
 
@@ -43,12 +48,12 @@ document.onkeyup = function (event) {
     }
 };
 
-document.onfocus = function (event) {
-    if (isGameStarted === false) {
-        setGameSceen();
-        startGame();
-        isGameStarted = true;
-    }
+startButton.onclick = function (event) {
+    setup();
+}
+
+startButton.onfocus = function (event) {
+    setup();
 }
 
 
