@@ -43,7 +43,15 @@ document.onkeyup = function (event) {
     }
 };
 
-document.onclick = function (event) {
+// document.onclick = function (event) {
+//     if (isGameStarted === false) {
+//         setGameSceen();
+//         startGame();
+//         isGameStarted = true;
+//     }
+// }
+
+document.onfocus = function (event) {
     if (isGameStarted === false) {
         setGameSceen();
         startGame();
