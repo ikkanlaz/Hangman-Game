@@ -1,6 +1,6 @@
 body {
     font-family: 'Reenie Beanie', cursive;
-    color: #555555;;
+    color: #555555;
     background-image: url(https://ikkanlaz.github.io/Hangman-Game/assets/images/linedpaper.png);
 }
 
@@ -22,7 +22,7 @@ h3 {
     font-size: 40px;
 }
 
-.jumbotron {
+.jumbotron, .panel {
     background-image: url(https://ikkanlaz.github.io/Hangman-Game/assets/images/extra_clean_paper.png);
 }
 
@@ -33,4 +33,20 @@ h3 {
 
 #start-game:focus {
     outline: none;
+}
+
+#word-to-guess {
+    text-align: center;
+    letter-spacing: 8px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    color: #333333;
+}
+
+#hangman-image {
+    margin-top: 30px;
+}
+
+.panel {
+    height: 522px;
 }

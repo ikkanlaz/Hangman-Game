@@ -16,16 +16,17 @@
 <body>
     <h1>H A N G M A N</h1>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-offset-2 col-md-8">
+        <div class="row" id="row-container">
+            <div class="col-md-8">
                 <div class="jumbotron">
                     <h2 ><button id="start-game">Click here to get started</button></h2>
                     <div id="game-screen" style="display: none;">
                         <h3>Wins: <span id="wins">0</span></h3>
+                        <h3>Losses: <span id="losses">0</span></h3>
                         <h3>Current Word</h3>
-                        <h3> <span id="word-to-guess"> - </span></h3>
-                        <h3>Number of guesses remaining: <span id="number-of-guesses"></span></h3>
-                        <h3>Letters already guessed: <span id="guessed-letters"></span></h3>
+                        <h3> <span id="word-to-guess"> _ </span></h3>
+                        <h3>Remaining Guesses: <span id="number-of-guesses"></span></h3>
+                        <h3>Guessed Letters: <span id="guessed-letters"></span></h3>
                     </div>
                 </div>
             </div>
