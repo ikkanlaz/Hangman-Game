@@ -36,6 +36,7 @@ function reset() {
     guessedWordArray = [];
     wordToGuess.textContent = "";
     var hangmanImage = document.getElementById("hangman-image");
+    numberOfGuesses.textContent = guessesRemaining;
     hangmanImage.setAttribute("src", "assets/images/" + guessesRemaining +".png");
     guessedLetters.textContent = lettersInput;
 }
