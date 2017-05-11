@@ -6,6 +6,7 @@ var lossesElem = document.getElementById("losses");
 var wordToGuess = document.getElementById("word-to-guess");
 var numberOfGuesses = document.getElementById("number-of-guesses");
 var guessedLetters = document.getElementById("guessed-letters");
+var gameContainerElem = document.getElementById("game-container");
 var word;
 var wordArray = [];
 var guessedWordArray = [];
@@ -21,6 +22,7 @@ var wordChoices = ["Academic", "Activity", "Adults", "After", "school", "Answers
 function setup() {
     if (isGameStarted === false) {
         startButtonElem.style = "display: none;";
+        gameContainerElem.setAttribute("class", "col-md-8")
         gameScreenElem.style = "display: block;";
         numberOfGuesses.textContent = guessesRemaining;
         createImageContainer();
