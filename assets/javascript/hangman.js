@@ -21,9 +21,9 @@ var wordChoices = ["Academic", "Activity", "Adults", "After", "school", "Answers
 
 function setup() {
     if (isGameStarted === false) {
-        startButtonElem.style = "display: none;";
+        startButtonElem.setAttribute("style", "display: none;");
         gameContainerElem.setAttribute("class", "col-md-8")
-        gameScreenElem.style = "display: block;";
+        gameScreenElem.setAttribute("style", "display: block;")
         numberOfGuesses.textContent = guessesRemaining;
         createImageContainer();
         createNewInstanceOfGame();
